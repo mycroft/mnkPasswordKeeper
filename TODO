@@ -1,0 +1,25 @@
+To do:
+
+ * Intégration d'Openssl pour le cryptage;
+ * Utilisation de GnuPG
+ * Export CSV, Html
+ * Import (ou lecture) des bases de données les plus courantes de mots de 
+   passes: Keychain, Mozilla Firefox ...
+ * Gestion de catégories ou de tags;
+ * Couleurs d'étiquettes;
+ * Gestion de timestamps pour pouvoir faire des diffs entre fichiers;
+ * Le générateur de mots de passes devrait intégrer plus de fonctions, comme 
+   la gestion d'Uuid, création par patterns, avec dicos;
+ * Documentaton Doxygen;
+ * Binaires à construire;
+
+Bugs:
+ * La fonction "copy to clipboard" du password generator fonctionne quand 
+   elle veut;
+
+Done:
+ * L'application ne devrait pas ajouter plusieurs "<< New Record >>" quand 
+   on actionne "New".
+ * Localisation (fr, en);
+ * Ajout de l'ajout d'une fonction de génération d'uuid.
+

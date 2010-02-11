@@ -1,0 +1,23 @@
+mnkPasswordKeeper / http://www.monkeyz.eu
+By Patrick MARIE <mycroft@monkeyz.eu>
+License: GPL
+
+-- 
+Install: 
+* get a working Qt (Version used: 4.4.1) installation;
+* ./build.sh 
+* copy mnkPasswordKeeper, fileclose.png and *.qm files in the same target 
+  directory (mine: $HOME/bin).
+* default password file is "passworddb.xmls". It is read on common working dir.
+* I use a simply but efficient shell script to run it:
+#!/bin/sh
+
+cd ~/bin
+./mnkPasswordKeeper &
+cd -
+* The default Master password for the passworddb.xmls is "default".
+--
+
+Notes: dockwidget is too large. Can't resize it due to a bug in Qt, which may
+be fixed in Qt 4.4.0.
+

@@ -23,7 +23,6 @@ mnkPasswordKeeperMainWindow::mnkPasswordKeeperMainWindow(QMainWindow *parent)
   : QMainWindow(parent)
 {
   setupUi(this);
-  addDockWidget(Qt::LeftDockWidgetArea, dockWidget);
 
   fileName = QString(DEFAULTFILE);
   currentPassword = NULL;
@@ -108,6 +107,8 @@ mnkPasswordKeeperMainWindow::mnkPasswordKeeperMainWindow(QMainWindow *parent)
       tmp->setChecked(false);
     }
   }
+
+  addDockWidget(Qt::LeftDockWidgetArea, dockWidget);
 
   connect(ag, SIGNAL(triggered(QAction *)),
           this, SLOT(changeStyle(QAction *)));
